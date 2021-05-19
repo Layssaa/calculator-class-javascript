@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div id="bodyCall">
+        <div id="result">
+            <p id="accountResult">
+
+            </p>
+        </div>
+        <div id='botton_call'>
+            <div id="buttonFuncionBasic">
+                <button id="buttonOnOff" onclick="onOff()"><p>ON/OFF</p></button>
+                <div id="buttonDelete">
+                    <img src="./imagens/delete.svg" onclick="deleteResult()" />
+                </div>
+            </div>
+            <div id="functionalities">
+                <div id="numbersButtons">
+                    <div id="firstColumn">
+                        <button type="button" class="buttonsCal" onclick="cleanResult('c')">C</button>
+                        <button type='button' class="buttonsCal" onclick="numbers(1)">1</button>
+                        <button type='button' class="buttonsCal" onclick="numbers(4)">4</button>
+                        <button type='button' class="buttonsCal" onclick="numbers(7)">7</button>
+                    </div>
+                    <div id="secondColumn">
+                        <button type='button' class="buttonsCal" onclick="operation('/')">/</button>
+                        <button type='button' class="buttonsCal" onclick="numbers(2)">2</button>
+                        <button type='button' class="buttonsCal" onclick="numbers(5)">5</button>
+                        <button type='button' class="buttonsCal" onclick="numbers(8)">8</button>
+                    </div>
+                    <div id="thirdColumn">
+                        <button type='button' class="buttonsCal" onclick="numbers(3)">3</button>
+                        <button type='button' class="buttonsCal" onclick="numbers(6)">6</button>
+                        <button type='button' class="buttonsCal" onclick="numbers(9)">9</button>
+                    </div>
+                    <div id="rightButtons">
+                        <button type='button' class="buttonsCal" onclick="operation('*')">x</button>
+                        <button type='button' class="buttonsCal" onclick="operation('-')">-</button>
+                        <button type='button' class="buttonsCal" id="buttonSoma" onclick="operation('+')">+</button>
+                        <button type='button' class="buttonsCal" id="calculateResult" onclick="calculateResult('=')">=</button>
+                    </div>
+                </div>
+                <!--<div id='fourthColumn'>-->
+
+                <div id="lowerButtons">
+                    <button type='button' class="buttonsCal" id="buttonZero" onclick="numbers(0)">0</button>
+                    <button type='button' class="buttonsCal" id="buttonPoint" onclick="numbers('.')">.</button>
+                </div>
+
+                <!-- </div>-->
+                <div id="line"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/calculator_script.js"></script>
+
+</html>

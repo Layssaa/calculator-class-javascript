@@ -1,0 +1,191 @@
+html {
+    width: 90%;
+    height: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #e1e5ea;
+    width: 35%;
+    height: 100%;
+    margin: auto;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 25px;
+    
+}
+
+#bodyCall{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  margin-top: 3%;
+}
+
+/*----------- RELER ------------*/
+#bodyCall {
+   background: rgba( 57, 62, 70, 0.80 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6.0px );
+-webkit-backdrop-filter: blur( 7.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+
+}
+
+#result {
+    width: 85%;
+    height: 15%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 40px;
+    border-radius: 3%;
+    color: #252525;
+    /* Used to prevent text overflow */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+#result {
+  background-color: #eeeeee;
+opacity: 1;
+background-image:  linear-gradient(#dedede 1px, transparent 1px), linear-gradient(to right, #dedede 1px, #eeeeee 1px);
+background-size: 20px 20px;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 25px;
+  color: #eeeeee;
+
+}
+
+button:hover{
+  background: #232931;
+}
+
+#botton_call {
+  display: flex;
+  margin-top: 3%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 98%;
+}
+
+#buttonFuncionBasic {
+  height: 18%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#buttonOnOff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5%;
+  background: #F55C47;
+  color: #FAF3F3;
+  width: 25%;
+  height: 84%;
+}
+#buttonOnOff p {
+  margin: none;
+  font-size: 80%;
+}
+
+#buttonDelete {
+  width: 25%;
+  height: 80%;
+  background:#4ecca3;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+#buttonDelete img {
+    width: 90%;
+    height: 98%;
+    padding: 1.5%  3%;
+    border-radius: 1%;
+
+}
+
+#buttonOnOff:hover, #buttonDelete:hover {
+  background: #232931;
+}
+
+#functionalities {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 100%;
+  margin-top: 1%;
+  flex-wrap:nowrap;
+  justify-content: center;
+}
+
+#numbersButtons {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#firstColumn, #secondColumn, #thirdColumn, #fourthColumn, #rightButtons {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+}
+
+.buttonsCal{
+  width: 80%;
+  height: 20%;
+  border-radius: 5px;
+  margin: 1%;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #232931;
+
+}
+
+#functionalities button:hover {
+  background: #232931;
+}
+
+#calculateResult{
+  background: #4ecca3;
+  height: 30%;
+  font-size: 25px;
+}
+#thirdColumn {
+  margin-top: 16%;
+}
+
+#lowerButtons {
+  display: flex;
+  justify-content: center;
+}
+
+#buttonZero  {
+  width: 40%;
+  height: 100%;
+  border-bottom: 1px solid #232931;
+
+}
+#buttonPoint {
+ 
+  width: 30%;
+  height: 100%;
+  border-bottom: 1px solid #232931;
+
+
+}
